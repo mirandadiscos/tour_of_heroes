@@ -1,5 +1,5 @@
 class Hero < ApplicationRecord
-    validates :name, presence: true
+    validates :name, :token, presence: true
 
     scope :sorted_by_name, -> { order(:name) }
     #scope :sorted_desc_by_name, -> { order(name: :desc) }
